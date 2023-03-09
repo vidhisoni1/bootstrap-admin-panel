@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Dashboard</title>
+    <!-- favi-icon -->
+    <link rel="icon" href="asset/images/layer-group-solid.svg">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="asset/css/all.min.css">
+    <!-- boostrap-css -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+    <!-- slidebar -->
+    <div class="d-flex">
+        <aside>
+            <div class="d-flex justify-content-center">
+                <div class="back p-4 aside-logo">
+                    <h1 class="text-white fs-4"><i class="fa-solid fa-layer-group text-primary fs-4"></i> AppStack</h1>
+                </div>
+            </div>
+            <div class="slide-content">
+                <h5 class="text-white px-4 fs-5 fw-light">pages</h5>
+                <h5 class="list-unstyled px-4 mt-4"><a href="#slide" class="text-decoration-none py-3 text-white fs-5"
+                        data-bs-toggle="collapse"><i class="fa-solid fa-table-columns text-white fs-5 me-2"></i>
+                        Dashboard</a></h5>
+                <ul class=" px-4" id="slide">
+                    <li class="list-unstyled ms-5 mt-3"><a href="index.html"
+                            class="text-decoration-none fs-6 text-white"> Profile</a></li>
+                    <li class="list-unstyled ms-5 mt-3"><a href="default.html"
+                            class="text-decoration-none fs-6 text-white">Default</a></li>
+                    <li class="list-unstyled ms-5 mt-3"><a href="" class="text-decoration-none fs-6 text-white">
+                            Saas</a></li>
+                    <li class="list-unstyled ms-5 mt-3"><a href="" class="text-decoration-none fs-6 text-white">
+                            Social</a></li>
+                    <li class="list-unstyled ms-5 mt-3"><a href="" class="text-decoration-none fs-6 text-white">
+                            Crypto</a></li>
+                </ul>
+            </div>
+        </aside>
+        <!-- slidebar -->
+        <!-- navbar -->
+        <main class="w-100">
+            <div class="header navbar-light ">
+                <nav class="p-3 shadow ">
+                    <div class="d-flex flex-wrap  justify-content-between">
+                        <div class="div d-flex flex-wrap align-items-center">
+                            <button class="nav-toggler" type="button" data-bs-toggle="collapse"
+                                aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <form action="" class="px-1">
+                                <div class="d-flex">
+                                    <input type="text" placeholder="Search Projects..." class="form-control">
+                                    <button class="btn border border-none"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div>
+                            <ul class="d-flex flex-wrap align-items-center">
+                                <li class="nav-item list-unstyled position-relative fs-4 me-3"><i
+                                        class="fa-regular fa-comment"></i>
+                                    <span
+                                        class="position-absolute bottom-50 start-50 text-white fs-6 px-2 py-0 bg-primary rounded-circle">4</span>
+                                </li>
+                                <li class="nav-item list-unstyled fs-4 me-3">
+                                    <i class="fa-solid fa-bell-slash"></i>
+                                </li>
+                                <li class="nav-item list-unstyled rounded-circle overflow-hidden  me-3"
+                                    style="width:26px; height:26px">
+                                    <img src="asset/images/download.png" alt="" srcset="" width="100%" height="100%"
+                                        class="img-fluid">
+                                </li>
+                                <li class="nav-item list-unstyled rounded-circle overflow-hidden me-3"
+                                    style="width: 36px; height: 36px;">
+                                    <img src="asset/images/avatar.42a86687.jpg" alt="" width="100%" height="100%"
+                                        class="img-fluid">
+                                </li>
+                                <li class="nav-item list-unstyled me-3">Chris Wood <i
+                                        class="fa-solid fa-angle-down"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+            <!-- navbar -->
+            <!-- content -->
+            <div class="content p-5">
+                <div class="text d-flex justify-content-between">
+                    <h5>Dashboard</h5>
+                    <div class="d-flex">
+                        <div class="dropdown shadow">
+                            <button class="btn  dropdown-toggle" type="button" id="drop-button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-regular fa-calendar"></i> Today
+                            </button>
+                            <ul class="dropdown-menu end-0" aria-labelledby="drop-button">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">seperated Link</a></li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn bg-primary ms-2"><i
+                                class="fa-solid fa-draw-polygon text-white"></i></button>
+                        <button type="button" class="btn bg-primary ms-2"><i
+                                class="fa-solid fa-clock-rotate-left text-white"></i></button>
+                    </div>
+
+                </div>
+                <div class="row mt-3">
+                    <div class="card col-12 col-md-6 col-lg-3 border-0 mt-2">
+                        <div class="card-body card-color shadow-sm p-3 rounded-1">
+
+                            <div class="row">
+                                <div class="col-12 col-lg-6 card-title">
+                                    <h4 class="text-primary fs-4">Welcome back, Chris!</h4>
+                                    <h6 class="text-primary ">AppStack Dashboard</h6>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <img src="asset/images/beta.png" alt="" width="100%" class="img-fluid">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card col-12 col-md-6 col-lg-3 mt-2 border-0">
+                        <div class="card-body shadow-sm  p-3 rounded-1">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 card-title">
+                                    <h4 class="text-dark fs-4">$ 24.300</h4>
+                                    <h6 class="text-secondary ">Total Earnings</h6>
+                                    <div class="d-flex align-items-center">
+                                        <button type="button"
+                                            class="btn btn-success text-white p-0 fs-6">+5.35%</button>
+                                        <h6 class="text-secondary ms-1 mt-2">Since last week</h6>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6 d-flex justify-content-end">
+                                    <div class="card-text rounded-circle bg-primary d-flex flex-wrap justify-content-center align-content-center "
+                                        style="width: 48px; height: 48px;">
+                                        <i class="fa-solid fa-dollar-sign text-white fs-4"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-md-6 col-lg-3 mt-2 border-0">
+                        <div class="card-body shadow-sm  p-3 rounded-1">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 card-title">
+                                    <h4 class="text-dark fs-4">43</h4>
+                                    <h6 class="text-secondary ">Pending Orders</h6>
+                                    <div class="d-flex align-items-center">
+                                        <button type="button" class="btn btn-danger text-white p-0 fs-6">-4.25%</button>
+                                        <h6 class="text-secondary ms-1 mt-2">Since last week</h6>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6 d-flex justify-content-end">
+                                    <div class="card-text rounded-circle bg-primary d-flex flex-wrap justify-content-center align-content-center "
+                                        style="width: 48px; height: 48px;">
+                                        <i class="fa-solid fa-bag-shopping text-white fs-4"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-md-6 col-lg-3 border-0 mt-2">
+                        <div class="card-body shadow-sm  p-3 rounded-1">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 card-title">
+                                    <h4 class="text-dark fs-4">$ 18.700</h4>
+                                    <h6 class="text-secondary ">Total Revenue</h6>
+                                    <div class="d-flex align-items-center">
+                                        <button type="button"
+                                            class="btn btn-success text-white p-0 fs-6">+8.65%</button>
+                                        <h6 class="text-secondary ms-1 mt-2">Since last week</h6>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6 d-flex justify-content-end">
+                                    <div class="card-text rounded-circle bg-primary d-flex flex-wrap justify-content-center align-content-center "
+                                        style="width: 48px; height: 48px;">
+                                        <i class="fa-solid fa-dollar-sign text-white fs-4"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-12 col-md-6 col-lg-8 p-3">
+                        <div class="card  border-0 shadow-sm">
+                            <div class="card-header d-flex justify-content-between bg-white border-0 P-0">
+                                <h5>Sales / Revenue</h5>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                            <div class="card-body pt-0">
+                                <canvas id="myChart"></canvas>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mt-4 mt-md-0 p-3 ">
+                        <div class="card border-0 bg-white p-3 shadow-sm">
+                            <div class="card-header bg-white border-0">
+                                <div class="d-flex justify-content-between">
+                                    <h5> Daily feed </h5>
+                                    <button type="button" class="btn btn-1 border-0 py-0 text-white">today</button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex border-bottom py-3">
+                                    <div class="card-title rounded-circle overflow-hidden"
+                                        style="width: 36px; height: 36px;">
+                                        <img src="asset/images/avatar-5.b309bbe2.jpg" alt="" width="100%" height="100%" class="img-fluid">
+                                    </div>
+                                    <div class="d-flex justify-content-between px-2 w-100">
+                                        <div class="card-content">
+                                            <strong class="text-secondary"> Ashley Briggs</strong><small
+                                                class="text-secondary"> started following </small> <strong
+                                                class="text-secondary"> Stacie Hall </strong> <br>
+                                            <small class="text-secondary">Today 7:51 pm</small>
+                                        </div>
+                                        <div>
+                                            <small>5m ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" border-bottom py-3">
+                                    <div class="d-flex">
+                                        <div class="card-title rounded-circle overflow-hidden"
+                                            style="width: 36px; height: 36px;">
+                                            <img src="asset/images/avatar.42a86687 (1).jpg" alt="" width="100%"
+                                                height="100%" class="img-fluid">
+                                        </div>
+                                        <div class="d-flex justify-content-between px-2 w-100 mb-2">
+                                            <div class="card-content">
+                                                <strong class="text-secondary">Chris Wood</strong><small
+                                                    class="text-secondary"> posted something on </small> <strong
+                                                    class="text-secondary"> Stacie Hall's </strong><small
+                                                    class="text-secondary"> timeline</small> <br>
+                                                <small class="text-secondary">Today 7:21 pm</small>
+                                            </div>
+                                            <div>
+                                                <small>30m ago</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-5 p-3 border">
+                                        <small class="text-muted fs-6">Etiam rhoncus. Maecenas tempus, tellus eget
+                                            condimentum
+                                            rhoncus, s.............
+                                            .</small>
+
+                                    </div>
+                                    <button type="button" class="btn btn-danger text-white mx-5 mt-2 rounded-0"><i
+                                            class="fa-regular fa-heart"></i> like</button>
+                                </div>
+                                <div class="d-flex border-bottom py-3">
+                                    <div class="card-title rounded-circle overflow-hidden"
+                                        style="width: 36px; height: 36px;">
+                                        <img src="asset/images/avatar-4.93166a0c.jpg" alt="" width="100%" height="100%" class="img-fluid">
+                                    </div>
+                                    <div class="d-flex justify-content-between px-2 w-100">
+                                        <div class="card-content">
+                                            <strong class="text-secondary"> Stacie Hall</strong><small
+                                                class="text-secondary"> posted a new blog </small>
+                                            <br>
+                                            <small class="text-secondary">Today 6:35 pm</small>
+                                        </div>
+                                        <div>
+                                            <small>1h ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary text-white text-center w-100 mt-2 border-0"> load-more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- calender -->
+                <div class="row">
+                <div class="card">
+                    
+                </div>
+                <!-- calender -->
+            </div>
+            </div>
+
+            <!-- content -->
+
+            <!-- boostrap-js -->
+            <script src="asset/js/jquery-3.6.3.min.js"></script>
+            <script src="asset/js/chart.js"></script>
+            <script src="asset/js/bootstrap.bundle.min.js"></script>
+            <script>
+                const ctx = document.getElementById('myChart');
+
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                        datasets: [{
+                            label: '# of Votes',
+                            data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+                            barThickness: 15,
+                            backgroundColor: "rgb(59,130,236)"
+                        },
+                        {
+                            barThickness: 15,
+                            label: '# of Votes',
+                            data: [69, 66, 24, 48, 52, 51, 44, 53, 62, 79, 51, 68],
+                            backgroundColor: "rgb(132,174,242)",
+                            borderRadius: 5
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            x: {
+                                stacked: true,
+                            },
+                            y: {
+                                beginAtZero: true,
+                                stacked: true,
+                            }
+                        }
+                    }
+                });
+                $(document).ready(function () {
+                    $('.nav-toggler').click(function () {
+                        $('aside').toggleClass('active');
+                    });
+                });
+
+            </script>
+</body>

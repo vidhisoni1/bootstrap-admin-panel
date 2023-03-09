@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Dashboard</title>
+    <!-- favi-icon -->
+    <link rel="icon" href="asset/images/layer-group-solid.svg">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="asset/css/all.min.css">
+    <!-- boostrap-css -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <!-- apexchat-css -->
+    <link rel="stylesheet" href="asset/css/apexcharts.css">
+    <!-- css -->
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+    <!-- slidebar -->
+    <div class="d-flex">
+        <aside>
+            <div class="d-flex justify-content-center">
+                <div class="back p-4 aside-logo">
+                    <h1 class="text-white fs-4"><i class="fa-solid fa-layer-group text-primary fs-4"></i> AppStack</h1>
+                </div>
+            </div>
+            <div class="slide-content">
+                <h5 class="text-white px-4 fs-5 fw-light">pages</h5>
+                <h5 class="list-unstyled px-4 mt-4"><a href="#slide" class="text-decoration-none py-3 text-white fs-5"
+                        data-bs-toggle="collapse"><i class="fa-solid fa-table-columns text-white fs-5 me-2"></i>
+                        Dashboard</a></h5>
+                <ul class=" px-4" id="slide">
+                    <li class="list-unstyled ms-5 mt-3"><a href="index.html"
+                            class="text-decoration-none fs-6 text-white "> Profile</a></li>
+                    <li class="list-unstyled ms-5 mt-3"><a href="default.html"
+                            class="text-decoration-none fs-6 text-white">Default</a></li>
+                    <li class="list-unstyled ms-5 mt-3"><a href="saas.html"
+                            class="text-decoration-none fs-6 text-white">
+                            Saas</a></li>
+                    <li class="list-unstyled ms-5 mt-3"><a href="social.html" class="text-decoration-none fs-6 text-white">
+                            Social</a></li>
+                    <li class="list-unstyled ms-5 mt-3"><a href="crypto.html" class="text-decoration-none fs-6 text-white">
+                            Crypto</a></li>
+                </ul>
+            </div>
+        </aside>
+        <!-- slidebar -->
+        <!-- navbar -->
+        <main class="w-100">
+            <div class="header navbar-light ">
+                <nav class="p-3 shadow ">
+                    <div class="d-flex flex-wrap  justify-content-between">
+                        <div class="div d-flex flex-wrap align-items-center">
+                            <button class="nav-toggler" type="button" data-bs-toggle="collapse"
+                                aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <form action="" class="px-1">
+                                <div class="d-flex">
+                                    <input type="text" placeholder="Search Projects..." class="form-control">
+                                    <button class="btn border border-none"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div>
+                            <ul class="d-flex flex-wrap align-items-center">
+                                <li class="nav-item list-unstyled position-relative fs-4 me-3"><i
+                                        class="fa-regular fa-comment"></i>
+                                    <span
+                                        class="position-absolute bottom-50 start-50 text-white fs-6 px-2 py-0 bg-primary rounded-circle">4</span>
+                                </li>
+                                <li class="nav-item list-unstyled fs-4 me-3">
+                                    <i class="fa-solid fa-bell-slash"></i>
+                                </li>
+                                <li class="nav-item list-unstyled rounded-circle overflow-hidden  me-3"
+                                    style="width:26px; height:26px">
+                                    <img src="asset/images/download.png" alt="" srcset="" width="100%" height="100%"
+                                        class="img-fluid">
+                                </li>
+                                <li class="nav-item list-unstyled rounded-circle overflow-hidden me-3"
+                                    style="width: 36px; height: 36px;">
+                                    <img src="asset/images/avatar.42a86687.jpg" alt="" width="100%" height="100%"
+                                        class="img-fluid">
+                                </li>
+                                <li class="nav-item list-unstyled me-3">Chris Wood <i
+                                        class="fa-solid fa-angle-down"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+
+            <!-- navbar -->
+            <!-- content -->
+            <div class="content p-5">
+                <div class="text d-flex justify-content-between">
+                    <h5>Crypto</h5>
+                    <div class="d-flex">
+                        <div class="dropdown shadow">
+                            <button class="btn  dropdown-toggle" type="button" id="drop-button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-regular fa-calendar"></i> Today
+                            </button>
+                            <ul class="dropdown-menu end-0" aria-labelledby="drop-button">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">seperated Link</a></li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn bg-primary ms-2"><i
+                                class="fa-solid fa-draw-polygon text-white"></i></button>
+                        <button type="button" class="btn bg-primary ms-2"><i
+                                class="fa-solid fa-clock-rotate-left text-white"></i></button>
+                    </div>
+                </div>
+                <!-- cards -->
+                <div class="row mt-3 justify-content-around">
+                    <div class="card col-12  col-lg-3 mt-2 border-0">
+                        <div class="card-body shadow  p-3 rounded-1">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 card-title">
+                                    <h4 class="text-dark fs-4">HSR/BTC</h4>
+                                    <h6 class="text-secondary ">0.001416 $16.61</h6>
+                                     <h6 class="text-secondary ms-1 mt-2">Volume: 2,692.47 BTC</h6>
+                                </div>
+                                <div class="col-12 col-lg-6 d-flex justify-content-end">
+                                    <h5 class="text-danger">-5.28%</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12  col-lg-3 mt-2 border-0">
+                        <div class="card-body shadow  p-3 rounded-1">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 card-title">
+                                    <h4 class="text-dark fs-4">BNB/BTC</h4>
+                                    <h6 class="text-secondary ">0.00022004 $2.58</h6>
+                                     <h6 class="text-secondary ms-1 mt-2">Volume: 842.52 BTC</h6>
+                                </div>
+                                <div class="col-12 col-lg-6 d-flex justify-content-end">
+                                    <h5 class="text-success">2.61%</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12  col-lg-3 mt-2 border-0">
+                        <div class="card-body shadow  p-3 rounded-1">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 card-title">
+                                    <h4 class="text-dark fs-4">POWR/BTC</h4>
+                                    <h6 class="text-secondary ">0.00005806 $0.68</h6>
+                                     <h6 class="text-secondary ms-1 mt-2">Volume: 393.03 BTC</h6>
+                                </div>
+                                <div class="col-12 col-lg-6 d-flex justify-content-end">
+                                    <h5 class="text-danger">-7.27%</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12  col-lg-3 mt-2 border-0">
+                        <div class="card-body shadow  p-3 rounded-1">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 card-title">
+                                    <h4 class="text-dark fs-4">TRX/BTC</h4>
+                                    <h6 class="text-secondary ">0.00000229 $0.04</h6>
+                                     <h6 class="text-secondary ms-1 mt-2">Volume: 6,836.31 BTC</h6>
+                                </div>
+                                <div class="col-12 col-lg-6 d-flex justify-content-end">
+                                    <h5 class="text-success">-4.98%</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- cards -->
+                <!-- table -->
+                <div class="row mt-5 ">
+                    <div class="col-12 col-lg-4 mt-3">
+                        <div class="card border-0 shadow p-0">
+                            <div class="card-header d-flex justify-content-between bg-white border-0 ">
+                                <h5>Markets</h5>
+                                <i class="fa-solid fa-ellipsis "></i>
+                            </div>
+                        
+                        <div class="card-body p-0">
+                            <table class="table table-striped m-0">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Coin</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Volume</th>
+                                    <th scope="col">Change</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>ETH</td>
+                                    <td class="text-end">0.03863405	</td>
+                                    <td class="text-end">1379.634	</td>
+                                    <td class="text-success text-end">+1.52	</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td>XRP</td>
+                                    <td class="text-end">0.00009313	</td>
+                                    <td class="text-end">270.805	</td>
+                                    <td class="text-danger text-end">-3.30</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td>XMR</td>
+                                    <td class="text-end">0.01292315		</td>
+                                    <td class="text-end">203.531		</td>
+                                    <td class="text-success text-end">+6.10	</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td>DASH</td>
+                                    <td class="text-end">0.02088992		</td>
+                                    <td class="text-end">84.034	</td>
+                                    <td class="text-danger text-end">-3.17	</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td>LTC</td>
+                                    <td class="text-end">0.00821501	</td>
+                                    <td class="text-end">80.566		</td>
+                                    <td class="text-success text-end">+3.00	</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td>STR</td>
+                                    <td class="text-end">0.00002948	</td>
+                                    <td class="text-end">58.981		</td>
+                                    <td class="text-success text-end">+2.58	</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td>DOGE</td>
+                                    <td class="text-end">0.00000061	</td>
+                                    <td class="text-end">46.849		</td>
+                                    <td class="text-danger text-end">-1.61</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td>REP</td>
+                                    <td class="text-end">0.00223510		</td>
+                                    <td class="text-end">37.038		</td>
+                                    <td class="text-success text-end">+0.54</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td>EOS</td>
+                                    <td class="text-end">0.00069000		</td>
+                                    <td class="text-end">35.040		</td>
+                                    <td class="text-danger text-end">-5.84	</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td>DGB</td>
+                                    <td class="text-end">0.00000277		</td>
+                                    <td class="text-end">34.840		</td>
+                                    <td class="text-success text-end">+0.36	</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td>ZEC</td>
+                                    <td class="text-end">0.01505000		</td>
+                                    <td class="text-end">32.326		</td>
+                                    <td class="text-danger text-end">-4.24	</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td>BURST</td>
+                                    <td class="text-end">0.00000098</td>
+                                    <td class="text-end">25.590		</td>
+                                    <td class="text-danger text-end">-15.52</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td>MAID</td>
+                                    <td class="text-end">0.00003724		</td>
+                                    <td class="text-end">20.556		</td>
+                                    <td class="text-danger text-end">-2.33</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td>ETC</td>
+                                    <td class="text-end">0.00132249	</td>
+                                    <td class="text-end">19.633		</td>
+                                    <td class="text-success text-end">+4.19</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td>STRAT</td>
+                                    <td class="text-end">0.00028587		</td>
+                                    <td class="text-end">17.557		</td>
+                                    <td class="text-success text-end">+4.40</td>
+                                    
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- table -->
+                    <!-- candlechart -->
+                    <div class="col-12 col-lg-8 mt-3">
+                        <div class="card shadow border-0 p-0">
+                            <div class="card-header border-0 bg-white">
+                                <h5>LTC/BTC</h5>
+                            </div>
+                            <div class="card-body p-0">
+                                <div id="chart"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                    <!-- candlechart -->
+                    <!-- selltable -->
+                    <div class="row mt-5">
+                        <div class="col-12 col-lg-6 mt-3">
+                            <div class="card border-0 shadow">
+                                <div class="card-header border-0 bg-white">
+                                    <h5>Sell Orders</h5>
+                                </div>
+                                <div class="card-body p-0">
+                                    <table class="table table-striped m-0">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">ETH</th>
+                                            <th scope="col">BTC</th>
+                                            <th scope="col">Sum(BTC)</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td class="text-end">0.03892501</td>
+                                            <td class="text-end">32.07831558	</td>
+                                            <td class="text-end">1.24864875		</td>
+                                            <td class=" text-end">1.26329659</td>
+                                            
+                                        </tr>
+                                          <tr>
+                                            <td class="text-end">0.03893754	</td>
+                                            <td class="text-end">4.97546187		</td>
+                                            <td class="text-end">0.19373225		</td>
+                                            <td class=" text-end">1.45702884</td>
+                                            
+                                        </tr>
+                                          <tr>
+                                            <td class="text-end">0.03893754	</td>
+                                            <td class="text-end">32.07831558	</td>
+                                            <td class="text-end">1.24864875		</td>
+                                            <td class=" text-end">1.26329659</td>
+                                            
+                                        </tr>
+                                          <tr>
+                                            <td class="text-end">0.03893754	</td>
+                                            <td class="text-end">32.07831558	</td>
+                                            <td class="text-end">1.24864875		</td>
+                                            <td class=" text-end">1.26329659</td>
+                                            
+                                        </tr>
+                                          <tr>
+                                            <td class="text-end">0.03893754	</td>
+                                            <td class="text-end">32.07831558	</td>
+                                            <td class="text-end">1.24864875		</td>
+                                            <td class=" text-end">1.26329659</td>
+                                            
+                                        </tr>
+                                          <tr>
+                                            <td class="text-end">0.03893754	</td>
+                                            <td class="text-end">32.07831558	</td>
+                                            <td class="text-end">1.24864875		</td>
+                                            <td class=" text-end">1.26329659</td>
+                                            
+                                        </tr>
+                                          <tr>
+                                            <td class="text-end">0.03893754	</td>
+                                            <td class="text-end">32.07831558	</td>
+                                            <td class="text-end">1.24864875		</td>
+                                            <td class=" text-end">1.26329659</td>
+                                            
+                                        </tr>
+                                          <tr>
+                                            <td class="text-end">0.03893754	</td>
+                                            <td class="text-end">32.07831558	</td>
+                                            <td class="text-end">1.24864875		</td>
+                                            <td class=" text-end">1.26329659</td>
+                                            
+                                        </tr>
+                                          <tr>
+                                            <td class="text-end">0.03893754	</td>
+                                            <td class="text-end">32.07831558	</td>
+                                            <td class="text-end">1.24864875		</td>
+                                            <td class=" text-end">1.26329659</td>
+                                            
+                                        </tr>
+                                          <tr>
+                                            <td class="text-end">0.03893754	</td>
+                                            <td class="text-end">32.07831558	</td>
+                                            <td class="text-end">1.24864875		</td>
+                                            <td class=" text-end">1.26329659</td>
+                                            
+                                        </tr>
+                                        </tbody>
+                                        </table>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-lg-6 mt-3">
+                            <div class="card border-0 shadow">
+                                <div class="card-header border-0 bg-white">
+                                    <h5>Buy Orders</h5>
+                                </div>
+                                <div class="card-body p-0">
+                                    <table class="table table-striped m-0">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">ETH</th>
+                                            <th scope="col">BTC</th>
+                                            <th scope="col">Sum(BTC)</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td class="text-end">0.03892501</td>
+                                            <td class="text-end">32.07831558	</td>
+                                            <td class="text-end">1.24864875		</td>
+                                            <td class=" text-end">1.26329659</td>
+                                            
+                                        </tr>
+                                          <tr>
+                                            <td class="text-end">0.03893754	</td>
+                                            <td class="text-end">4.97546187		</td>
+                                            <td class="text-end">0.19373225		</td>
+                                            <td class=" text-end">1.45702884</td>
+                                            
+                                        </tr>
+                                          <tr>
+                                            <td class="text-end">0.03893754	</td>
+                                            <td class="text-end">32.07831558	</td>
+                                            <td class="text-end">1.24864875		</td>
+                                            <td class=" text-end">1.26329659</td>
+                                            
+                                        </tr>
+                                          <tr>
+                                            <td class="text-end">0.03893754	</td>
+                                            <td class="text-end">32.07831558	</td>
+                                            <td class="text-end">1.24864875		</td>
+                                            <td class=" text-end">1.26329659</td>
+                                            
+                                        </tr>
+                                          <tr>
+                                            <td class="text-end">0.03893754	</td>
+                                            <td class="text-end">32.07831558	</td>
+                                            <td class="text-end">1.24864875		</td>
+                                            <td class=" text-end">1.26329659</td>
+                                            
+                                        </tr>
+                                          <tr>
+                                            <td class="text-end">0.03893754	</td>
+                                            <td class="text-end">32.07831558	</td>
+                                            <td class="text-end">1.24864875		</td>
+                                            <td class=" text-end">1.26329659</td>
+                                            
+                                        </tr>
+                                          <tr>
+                                            <td class="text-end">0.03893754	</td>
+                                            <td class="text-end">32.07831558	</td>
+                                            <td class="text-end">1.24864875		</td>
+                                            <td class=" text-end">1.26329659</td>
+                                            
+                                        </tr>
+                                          <tr>
+                                            <td class="text-end">0.03893754	</td>
+                                            <td class="text-end">32.07831558	</td>
+                                            <td class="text-end">1.24864875		</td>
+                                            <td class=" text-end">1.26329659</td>
+                                            
+                                        </tr>
+                                          <tr>
+                                            <td class="text-end">0.03893754	</td>
+                                            <td class="text-end">32.07831558	</td>
+                                            <td class="text-end">1.24864875		</td>
+                                            <td class=" text-end">1.26329659</td>
+                                            
+                                        </tr>
+                                          <tr>
+                                            <td class="text-end">0.03893754	</td>
+                                            <td class="text-end">32.07831558	</td>
+                                            <td class="text-end">1.24864875		</td>
+                                            <td class=" text-end">1.26329659</td>
+                                            
+                                        </tr>
+                                        </tbody>
+                                        </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- selltable -->
+            </div>
+            <!-- content -->
+            <!-- footer -->
+            <div class="footer p-3 border-top ">
+                <div class="d-flex justify-content-between">
+                <ul class="d-flex">
+                    <li class="list-unstyled ms-2 text-secondary">Support</li>
+                    <li class="list-unstyled ms-2 text-secondary">Help Center</li>
+                    <li class="list-unstyled ms-2 text-secondary">Privacy</li>
+                    <li class="list-unstyled ms-2 text-secondary">Terms of Service</li>
+                </ul>
+                <ul>
+                    <li class="list-unstyled text-secondary">© 2023 - AppStack</li>
+                </ul>
+            </div>
+            </div>
+            <!-- footer -->
+        </main>
+    </div>
+
+
+    <!-- boostrap-js -->
+    <script src="asset/js/jquery-3.6.3.min.js"></script>
+    <script src="asset/js/chart.js"></script>
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/js/apexcharts.min.js"></script>
+    <script>
+         // slidebar
+         $(document).ready(function () {
+            $('.nav-toggler').click(function () {
+                $('aside').toggleClass('active');
+            });
+
+
+
+        });
+        // slidebar
+        // apexchat
+        
+        var options = {
+          series: [{
+          data: [{
+              x: new Date(1538778600000),
+              y: [6629.81, 6650.5, 6623.04, 6633.33]
+            },
+            {
+              x: new Date(1538780400000),
+              y: [6632.01, 6643.59, 6620, 6630.11]
+            },
+            {
+              x: new Date(1538782200000),
+              y: [6630.71, 6648.95, 6623.34, 6635.65]
+            },
+            {
+              x: new Date(1538784000000),
+              y: [6635.65, 6651, 6629.67, 6638.24]
+            },
+            {
+              x: new Date(1538785800000),
+              y: [6638.24, 6640, 6620, 6624.47]
+            },
+            {
+              x: new Date(1538787600000),
+              y: [6624.53, 6636.03, 6621.68, 6624.31]
+            },
+            {
+              x: new Date(1538789400000),
+              y: [6624.61, 6632.2, 6617, 6626.02]
+            },
+            {
+              x: new Date(1538791200000),
+              y: [6627, 6627.62, 6584.22, 6603.02]
+            },
+            {
+              x: new Date(1538793000000),
+              y: [6605, 6608.03, 6598.95, 6604.01]
+            },
+            {
+              x: new Date(1538794800000),
+              y: [6604.5, 6614.4, 6602.26, 6608.02]
+            },
+            {
+              x: new Date(1538796600000),
+              y: [6608.02, 6610.68, 6601.99, 6608.91]
+            },
+            {
+              x: new Date(1538798400000),
+              y: [6608.91, 6618.99, 6608.01, 6612]
+            },
+            {
+              x: new Date(1538800200000),
+              y: [6612, 6615.13, 6605.09, 6612]
+            },
+            {
+              x: new Date(1538802000000),
+              y: [6612, 6624.12, 6608.43, 6622.95]
+            },
+            {
+              x: new Date(1538803800000),
+              y: [6623.91, 6623.91, 6615, 6615.67]
+            },
+            {
+              x: new Date(1538805600000),
+              y: [6618.69, 6618.74, 6610, 6610.4]
+            },
+            {
+              x: new Date(1538807400000),
+              y: [6611, 6622.78, 6610.4, 6614.9]
+            },
+            {
+              x: new Date(1538809200000),
+              y: [6614.9, 6626.2, 6613.33, 6623.45]
+            },
+            {
+              x: new Date(1538811000000),
+              y: [6623.48, 6627, 6618.38, 6620.35]
+            },
+            {
+              x: new Date(1538812800000),
+              y: [6619.43, 6620.35, 6610.05, 6615.53]
+            },
+            {
+              x: new Date(1538814600000),
+              y: [6615.53, 6617.93, 6610, 6615.19]
+            },
+            {
+              x: new Date(1538816400000),
+              y: [6615.19, 6621.6, 6608.2, 6620]
+            },
+            {
+              x: new Date(1538818200000),
+              y: [6619.54, 6625.17, 6614.15, 6620]
+            },
+            {
+              x: new Date(1538820000000),
+              y: [6620.33, 6634.15, 6617.24, 6624.61]
+            },
+            {
+              x: new Date(1538821800000),
+              y: [6625.95, 6626, 6611.66, 6617.58]
+            },
+            {
+              x: new Date(1538823600000),
+              y: [6619, 6625.97, 6595.27, 6598.86]
+            },
+            {
+              x: new Date(1538825400000),
+              y: [6598.86, 6598.88, 6570, 6587.16]
+            },
+            {
+              x: new Date(1538827200000),
+              y: [6588.86, 6600, 6580, 6593.4]
+            },
+            {
+              x: new Date(1538829000000),
+              y: [6593.99, 6598.89, 6585, 6587.81]
+            },
+            {
+              x: new Date(1538830800000),
+              y: [6587.81, 6592.73, 6567.14, 6578]
+            },
+            {
+              x: new Date(1538832600000),
+              y: [6578.35, 6581.72, 6567.39, 6579]
+            },
+            {
+              x: new Date(1538834400000),
+              y: [6579.38, 6580.92, 6566.77, 6575.96]
+            },
+            {
+              x: new Date(1538836200000),
+              y: [6575.96, 6589, 6571.77, 6588.92]
+            },
+            {
+              x: new Date(1538838000000),
+              y: [6588.92, 6594, 6577.55, 6589.22]
+            },
+            {
+              x: new Date(1538839800000),
+              y: [6589.3, 6598.89, 6589.1, 6596.08]
+            },
+            {
+              x: new Date(1538841600000),
+              y: [6597.5, 6600, 6588.39, 6596.25]
+            },
+            {
+              x: new Date(1538843400000),
+              y: [6598.03, 6600, 6588.73, 6595.97]
+            },
+            {
+              x: new Date(1538845200000),
+              y: [6595.97, 6602.01, 6588.17, 6602]
+            },
+            {
+              x: new Date(1538847000000),
+              y: [6602, 6607, 6596.51, 6599.95]
+            },
+            {
+              x: new Date(1538848800000),
+              y: [6600.63, 6601.21, 6590.39, 6591.02]
+            },
+            {
+              x: new Date(1538850600000),
+              y: [6591.02, 6603.08, 6591, 6591]
+            },
+            {
+              x: new Date(1538852400000),
+              y: [6591, 6601.32, 6585, 6592]
+            },
+            {
+              x: new Date(1538854200000),
+              y: [6593.13, 6596.01, 6590, 6593.34]
+            },
+            {
+              x: new Date(1538856000000),
+              y: [6593.34, 6604.76, 6582.63, 6593.86]
+            },
+            {
+              x: new Date(1538857800000),
+              y: [6593.86, 6604.28, 6586.57, 6600.01]
+            },
+            {
+              x: new Date(1538859600000),
+              y: [6601.81, 6603.21, 6592.78, 6596.25]
+            },
+            {
+              x: new Date(1538861400000),
+              y: [6596.25, 6604.2, 6590, 6602.99]
+            },
+            {
+              x: new Date(1538863200000),
+              y: [6602.99, 6606, 6584.99, 6587.81]
+            },
+            {
+              x: new Date(1538865000000),
+              y: [6587.81, 6595, 6583.27, 6591.96]
+            },
+            {
+              x: new Date(1538866800000),
+              y: [6591.97, 6596.07, 6585, 6588.39]
+            },
+            {
+              x: new Date(1538868600000),
+              y: [6587.6, 6598.21, 6587.6, 6594.27]
+            },
+            {
+              x: new Date(1538870400000),
+              y: [6596.44, 6601, 6590, 6596.55]
+            },
+            {
+              x: new Date(1538872200000),
+              y: [6598.91, 6605, 6596.61, 6600.02]
+            },
+            {
+              x: new Date(1538874000000),
+              y: [6600.55, 6605, 6589.14, 6593.01]
+            },
+            {
+              x: new Date(1538875800000),
+              y: [6593.15, 6605, 6592, 6603.06]
+            },
+            {
+              x: new Date(1538877600000),
+              y: [6603.07, 6604.5, 6599.09, 6603.89]
+            },
+            {
+              x: new Date(1538879400000),
+              y: [6604.44, 6604.44, 6600, 6603.5]
+            },
+            {
+              x: new Date(1538881200000),
+              y: [6603.5, 6603.99, 6597.5, 6603.86]
+            },
+            {
+              x: new Date(1538883000000),
+              y: [6603.85, 6605, 6600, 6604.07]
+            },
+            {
+              x: new Date(1538884800000),
+              y: [6604.98, 6606, 6604.07, 6606]
+            },
+          ]
+        }],
+          chart: {
+          type: 'candlestick',
+          height: 645,
+        },
+        title: {
+          text: 'CandleStick Chart',
+          align: 'left'
+        },
+        xaxis: {
+          type: 'datetime'
+        },
+        yaxis: {
+          tooltip: {
+            enabled: true
+          }
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+        // apexchat
+        </script>
+</body>
+ </html>

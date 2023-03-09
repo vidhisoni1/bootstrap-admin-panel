@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* class */
+:root{
+    --dark:#2c3a55;
+    --grey:#495057;
+    --blue:#e0eafc;
+    --coperblue:rgb(31,155,207);
+}
+/* class */
+/* sidebar */
+.back{
+    background-color: var(--dark);
+}
+aside{
+    width: 300px;
+    min-height: 100vh;
+    background-color: var(--dark);
+    transition: all 1s;
+    margin-left: -300px;
+}
+aside.active{
+    margin-left: 0;
+    transition: all 1s;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+.form-control:focus{
+    box-shadow: none !important;
+    border:1px solid var(--grey) !important;
+}
+.card-color{
+    background-color: var(--blue);
+}
+.btn-1{
+    background-color: var(--coperblue);
+}
+.card-body canvas{
+    height: 475px !important;
+    width: 1120px !important;
+}
+/* sidebar */   
